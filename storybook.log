@@ -1,0 +1,262 @@
+npm WARN ERESOLVE overriding peer dependency
+npm WARN While resolving: @babel/helper-create-class-features-plugin@7.20.12
+npm WARN Found: @babel/core@7.20.12
+npm WARN node_modules/@babel/helper-create-class-features-plugin/node_modules/@babel/core
+npm WARN 
+npm WARN Could not resolve dependency:
+npm WARN peer @babel/core@"^7.0.0" from @babel/helper-create-class-features-plugin@7.20.12
+npm WARN node_modules/@babel/helper-create-class-features-plugin
+npm WARN   @babel/helper-create-class-features-plugin@"^7.18.6" from @babel/plugin-proposal-class-properties@7.18.6
+npm WARN   node_modules/@babel/preset-env/node_modules/@babel/plugin-proposal-class-properties
+npm WARN   7 more (@babel/plugin-proposal-class-static-block, ...)
+npm WARN ERESOLVE overriding peer dependency
+npm WARN While resolving: @babel/helper-create-regexp-features-plugin@7.20.5
+npm WARN Found: @babel/core@7.20.12
+npm WARN node_modules/@babel/helper-create-regexp-features-plugin/node_modules/@babel/core
+npm WARN 
+npm WARN Could not resolve dependency:
+npm WARN peer @babel/core@"^7.0.0" from @babel/helper-create-regexp-features-plugin@7.20.5
+npm WARN node_modules/@babel/helper-create-regexp-features-plugin
+npm WARN   @babel/helper-create-regexp-features-plugin@"^7.18.6" from @babel/plugin-transform-dotall-regex@7.18.6
+npm WARN   node_modules/@babel/plugin-transform-dotall-regex
+npm WARN   3 more (@babel/plugin-proposal-unicode-property-regex, ...)
+npm WARN ERESOLVE overriding peer dependency
+npm WARN While resolving: @babel/helper-define-polyfill-provider@0.3.3
+npm WARN Found: @babel/core@7.20.12
+npm WARN node_modules/@babel/helper-define-polyfill-provider/node_modules/@babel/core
+npm WARN 
+npm WARN Could not resolve dependency:
+npm WARN peer @babel/core@"^7.4.0-0" from @babel/helper-define-polyfill-provider@0.3.3
+npm WARN node_modules/@babel/helper-define-polyfill-provider
+npm WARN   @babel/helper-define-polyfill-provider@"^0.3.3" from babel-plugin-polyfill-corejs2@0.3.3
+npm WARN   node_modules/babel-plugin-polyfill-corejs2
+npm WARN   2 more (babel-plugin-polyfill-corejs3, babel-plugin-polyfill-regenerator)
+npm WARN ERESOLVE overriding peer dependency
+npm WARN While resolving: @babel/helper-remap-async-to-generator@7.18.9
+npm WARN Found: @babel/core@7.20.12
+npm WARN node_modules/@babel/helper-remap-async-to-generator/node_modules/@babel/core
+npm WARN 
+npm WARN Could not resolve dependency:
+npm WARN peer @babel/core@"^7.0.0" from @babel/helper-remap-async-to-generator@7.18.9
+npm WARN node_modules/@babel/helper-remap-async-to-generator
+npm WARN   @babel/helper-remap-async-to-generator@"^7.18.9" from @babel/plugin-proposal-async-generator-functions@7.20.7
+npm WARN   node_modules/@babel/preset-env/node_modules/@babel/plugin-proposal-async-generator-functions
+npm WARN   1 more (@babel/plugin-transform-async-to-generator)
+npm WARN ERESOLVE overriding peer dependency
+npm WARN While resolving: @babel/plugin-syntax-async-generators@7.8.4
+npm WARN Found: @babel/core@7.20.12
+npm WARN node_modules/@babel/plugin-syntax-async-generators/node_modules/@babel/core
+npm WARN 
+npm WARN Could not resolve dependency:
+npm WARN peer @babel/core@"^7.0.0-0" from @babel/plugin-syntax-async-generators@7.8.4
+npm WARN node_modules/@babel/plugin-syntax-async-generators
+npm WARN   @babel/plugin-syntax-async-generators@"^7.8.4" from @babel/preset-env@7.20.2
+npm WARN   node_modules/@babel/preset-env
+npm WARN   2 more (@babel/plugin-proposal-async-generator-functions, babel-preset-current-node-syntax)
+npm WARN ERESOLVE overriding peer dependency
+npm WARN While resolving: @babel/plugin-syntax-class-properties@7.12.13
+npm WARN Found: @babel/core@7.20.12
+npm WARN node_modules/@babel/plugin-syntax-class-properties/node_modules/@babel/core
+npm WARN 
+npm WARN Could not resolve dependency:
+npm WARN peer @babel/core@"^7.0.0-0" from @babel/plugin-syntax-class-properties@7.12.13
+npm WARN node_modules/@babel/plugin-syntax-class-properties
+npm WARN   @babel/plugin-syntax-class-properties@"^7.12.13" from @babel/preset-env@7.20.2
+npm WARN   node_modules/@babel/preset-env
+npm WARN   1 more (babel-preset-current-node-syntax)
+npm WARN ERESOLVE overriding peer dependency
+npm WARN While resolving: @babel/plugin-syntax-json-strings@7.8.3
+npm WARN Found: @babel/core@7.20.12
+npm WARN node_modules/@babel/plugin-syntax-json-strings/node_modules/@babel/core
+npm WARN 
+npm WARN Could not resolve dependency:
+npm WARN peer @babel/core@"^7.0.0-0" from @babel/plugin-syntax-json-strings@7.8.3
+npm WARN node_modules/@babel/plugin-syntax-json-strings
+npm WARN   @babel/plugin-syntax-json-strings@"^7.8.3" from @babel/preset-env@7.20.2
+npm WARN   node_modules/@babel/preset-env
+npm WARN   2 more (@babel/plugin-proposal-json-strings, babel-preset-current-node-syntax)
+npm WARN ERESOLVE overriding peer dependency
+npm WARN While resolving: @babel/plugin-syntax-logical-assignment-operators@7.10.4
+npm WARN Found: @babel/core@7.20.12
+npm WARN node_modules/@babel/plugin-syntax-logical-assignment-operators/node_modules/@babel/core
+npm WARN 
+npm WARN Could not resolve dependency:
+npm WARN peer @babel/core@"^7.0.0-0" from @babel/plugin-syntax-logical-assignment-operators@7.10.4
+npm WARN node_modules/@babel/plugin-syntax-logical-assignment-operators
+npm WARN   @babel/plugin-syntax-logical-assignment-operators@"^7.10.4" from @babel/preset-env@7.20.2
+npm WARN   node_modules/@babel/preset-env
+npm WARN   2 more (...)
+npm WARN ERESOLVE overriding peer dependency
+npm WARN While resolving: @babel/plugin-syntax-nullish-coalescing-operator@7.8.3
+npm WARN Found: @babel/core@7.20.12
+npm WARN node_modules/@babel/plugin-syntax-nullish-coalescing-operator/node_modules/@babel/core
+npm WARN 
+npm WARN Could not resolve dependency:
+npm WARN peer @babel/core@"^7.0.0-0" from @babel/plugin-syntax-nullish-coalescing-operator@7.8.3
+npm WARN node_modules/@babel/plugin-syntax-nullish-coalescing-operator
+npm WARN   @babel/plugin-syntax-nullish-coalescing-operator@"^7.8.3" from @babel/preset-env@7.20.2
+npm WARN   node_modules/@babel/preset-env
+npm WARN   3 more (...)
+npm WARN ERESOLVE overriding peer dependency
+npm WARN While resolving: @babel/plugin-syntax-numeric-separator@7.10.4
+npm WARN Found: @babel/core@7.20.12
+npm WARN node_modules/@babel/plugin-syntax-numeric-separator/node_modules/@babel/core
+npm WARN 
+npm WARN Could not resolve dependency:
+npm WARN peer @babel/core@"^7.0.0-0" from @babel/plugin-syntax-numeric-separator@7.10.4
+npm WARN node_modules/@babel/plugin-syntax-numeric-separator
+npm WARN   @babel/plugin-syntax-numeric-separator@"^7.10.4" from @babel/preset-env@7.20.2
+npm WARN   node_modules/@babel/preset-env
+npm WARN   3 more (@babel/plugin-proposal-numeric-separator, ...)
+npm WARN ERESOLVE overriding peer dependency
+npm WARN While resolving: @babel/plugin-syntax-object-rest-spread@7.8.3
+npm WARN Found: @babel/core@7.20.12
+npm WARN node_modules/@babel/plugin-syntax-object-rest-spread/node_modules/@babel/core
+npm WARN 
+npm WARN Could not resolve dependency:
+npm WARN peer @babel/core@"^7.0.0-0" from @babel/plugin-syntax-object-rest-spread@7.8.3
+npm WARN node_modules/@babel/plugin-syntax-object-rest-spread
+npm WARN   @babel/plugin-syntax-object-rest-spread@"^7.8.3" from @babel/preset-env@7.20.2
+npm WARN   node_modules/@babel/preset-env
+npm WARN   2 more (@babel/plugin-proposal-object-rest-spread, babel-preset-current-node-syntax)
+npm WARN ERESOLVE overriding peer dependency
+npm WARN While resolving: @babel/plugin-syntax-optional-catch-binding@7.8.3
+npm WARN Found: @babel/core@7.20.12
+npm WARN node_modules/@babel/plugin-syntax-optional-catch-binding/node_modules/@babel/core
+npm WARN 
+npm WARN Could not resolve dependency:
+npm WARN peer @babel/core@"^7.0.0-0" from @babel/plugin-syntax-optional-catch-binding@7.8.3
+npm WARN node_modules/@babel/plugin-syntax-optional-catch-binding
+npm WARN   @babel/plugin-syntax-optional-catch-binding@"^7.8.3" from @babel/preset-env@7.20.2
+npm WARN   node_modules/@babel/preset-env
+npm WARN   2 more (@babel/plugin-proposal-optional-catch-binding, babel-preset-current-node-syntax)
+npm WARN ERESOLVE overriding peer dependency
+npm WARN While resolving: @babel/plugin-syntax-optional-chaining@7.8.3
+npm WARN Found: @babel/core@7.20.12
+npm WARN node_modules/@babel/plugin-syntax-optional-chaining/node_modules/@babel/core
+npm WARN 
+npm WARN Could not resolve dependency:
+npm WARN peer @babel/core@"^7.0.0-0" from @babel/plugin-syntax-optional-chaining@7.8.3
+npm WARN node_modules/@babel/plugin-syntax-optional-chaining
+npm WARN   @babel/plugin-syntax-optional-chaining@"^7.8.3" from @babel/preset-env@7.20.2
+npm WARN   node_modules/@babel/preset-env
+npm WARN   3 more (@babel/plugin-proposal-optional-chaining, ...)
+npm WARN ERESOLVE overriding peer dependency
+npm WARN While resolving: @babel/plugin-syntax-top-level-await@7.14.5
+npm WARN Found: @babel/core@7.20.12
+npm WARN node_modules/@babel/plugin-syntax-top-level-await/node_modules/@babel/core
+npm WARN 
+npm WARN Could not resolve dependency:
+npm WARN peer @babel/core@"^7.0.0-0" from @babel/plugin-syntax-top-level-await@7.14.5
+npm WARN node_modules/@babel/plugin-syntax-top-level-await
+npm WARN   @babel/plugin-syntax-top-level-await@"^7.14.5" from @babel/preset-env@7.20.2
+npm WARN   node_modules/@babel/preset-env
+npm WARN   1 more (babel-preset-current-node-syntax)
+npm WARN ERESOLVE overriding peer dependency
+npm WARN While resolving: @babel/plugin-syntax-typescript@7.20.0
+npm WARN Found: @babel/core@7.20.12
+npm WARN node_modules/@babel/plugin-syntax-typescript/node_modules/@babel/core
+npm WARN 
+npm WARN Could not resolve dependency:
+npm WARN peer @babel/core@"^7.0.0-0" from @babel/plugin-syntax-typescript@7.20.0
+npm WARN node_modules/@babel/plugin-syntax-typescript
+npm WARN   @babel/plugin-syntax-typescript@"^7.20.0" from @babel/plugin-transform-typescript@7.20.13
+npm WARN   node_modules/babel-preset-react-app/node_modules/@babel/plugin-transform-typescript
+npm WARN   1 more (jest-snapshot)
+npm WARN ERESOLVE overriding peer dependency
+npm WARN While resolving: @babel/plugin-transform-dotall-regex@7.18.6
+npm WARN Found: @babel/core@7.20.12
+npm WARN node_modules/@babel/plugin-transform-dotall-regex/node_modules/@babel/core
+npm WARN 
+npm WARN Could not resolve dependency:
+npm WARN peer @babel/core@"^7.0.0-0" from @babel/plugin-transform-dotall-regex@7.18.6
+npm WARN node_modules/@babel/plugin-transform-dotall-regex
+npm WARN   @babel/plugin-transform-dotall-regex@"^7.18.6" from @babel/preset-env@7.20.2
+npm WARN   node_modules/@babel/preset-env
+npm WARN   1 more (@babel/preset-modules)
+npm WARN ERESOLVE overriding peer dependency
+npm WARN While resolving: @babel/plugin-transform-modules-commonjs@7.23.3
+npm WARN Found: @babel/core@7.23.7
+npm WARN node_modules/@babel/plugin-transform-modules-commonjs/node_modules/@babel/core
+npm WARN   peer @babel/core@"^7.0.0" from @babel/helper-module-transforms@7.23.3
+npm WARN   node_modules/@babel/plugin-transform-modules-commonjs/node_modules/@babel/helper-module-transforms
+npm WARN     @babel/helper-module-transforms@"^7.23.3" from @babel/plugin-transform-modules-commonjs@7.23.3
+npm WARN     node_modules/@babel/plugin-transform-modules-commonjs
+npm WARN     1 more (@babel/core)
+npm WARN 
+npm WARN Could not resolve dependency:
+npm WARN peer @babel/core@"^7.0.0-0" from @babel/plugin-transform-modules-commonjs@7.23.3
+npm WARN node_modules/@babel/plugin-transform-modules-commonjs
+npm WARN   @babel/plugin-transform-modules-commonjs@"^7.19.6" from @babel/preset-env@7.20.2
+npm WARN   node_modules/@babel/preset-env
+npm WARN ERESOLVE overriding peer dependency
+npm WARN While resolving: @babel/plugin-transform-parameters@7.20.7
+npm WARN Found: @babel/core@7.20.12
+npm WARN node_modules/@babel/plugin-transform-parameters/node_modules/@babel/core
+npm WARN 
+npm WARN Could not resolve dependency:
+npm WARN peer @babel/core@"^7.0.0-0" from @babel/plugin-transform-parameters@7.20.7
+npm WARN node_modules/@babel/plugin-transform-parameters
+npm WARN   @babel/plugin-transform-parameters@"^7.20.1" from @babel/preset-env@7.20.2
+npm WARN   node_modules/@babel/preset-env
+npm WARN   1 more (@babel/plugin-proposal-object-rest-spread)
+npm WARN ERESOLVE overriding peer dependency
+npm WARN While resolving: @babel/preset-env@7.20.2
+npm WARN Found: @babel/core@7.20.12
+npm WARN node_modules/@babel/preset-env/node_modules/@babel/core
+npm WARN   peer @babel/core@"^7.0.0" from @babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression@7.18.6
+npm WARN   node_modules/@babel/preset-env/node_modules/@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression
+npm WARN     @babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression@"^7.18.6" from @babel/preset-env@7.20.2
+npm WARN     node_modules/@babel/preset-env
+npm WARN   51 more (...)
+npm WARN 
+npm WARN Could not resolve dependency:
+npm WARN peer @babel/core@"^7.0.0-0" from @babel/preset-env@7.20.2
+npm WARN node_modules/@babel/preset-env
+npm WARN   @babel/preset-env@"^7.12.1" from @svgr/webpack@5.5.0
+npm WARN   node_modules/@svgr/webpack
+npm WARN   2 more (babel-preset-react-app, workbox-build)
+npm ERR! code ERESOLVE
+npm ERR! ERESOLVE could not resolve
+npm ERR! 
+npm ERR! While resolving: @storybook/react-webpack5@7.6.9
+npm ERR! Found: @babel/core@7.16.0
+npm ERR! node_modules/@babel/core
+npm ERR!   peer @babel/core@"^7.0.0" from @babel/helper-compilation-targets@7.20.7
+npm ERR!   node_modules/@babel/helper-compilation-targets
+npm ERR!     @babel/helper-compilation-targets@"^7.16.0" from @babel/core@7.16.0
+npm ERR!     @babel/helper-compilation-targets@"^7.20.7" from @babel/core@7.20.12
+npm ERR!     node_modules/@babel/helper-create-class-features-plugin/node_modules/@babel/core
+npm ERR!     34 more (@babel/core, @babel/helper-define-polyfill-provider, ...)
+npm ERR!   peer @babel/core@"^7.0.0-0" from @babel/plugin-syntax-bigint@7.8.3
+npm ERR!   node_modules/@babel/plugin-syntax-bigint
+npm ERR!     @babel/plugin-syntax-bigint@"^7.8.3" from babel-preset-current-node-syntax@1.0.1
+npm ERR!     node_modules/babel-preset-current-node-syntax
+npm ERR!       babel-preset-current-node-syntax@"^1.0.0" from babel-preset-jest@27.5.1
+npm ERR!       node_modules/babel-preset-jest
+npm ERR!         babel-preset-jest@"^27.4.0" from babel-jest@27.4.2
+npm ERR!         node_modules/babel-jest
+npm ERR!         1 more (babel-jest)
+npm ERR!       1 more (jest-snapshot)
+npm ERR!   11 more (@babel/plugin-syntax-flow, ...)
+npm ERR! 
+npm ERR! Could not resolve dependency:
+npm ERR! peerOptional @babel/core@"^7.22.0" from @storybook/react-webpack5@7.6.9
+npm ERR! node_modules/@storybook/react-webpack5
+npm ERR!   dev @storybook/react-webpack5@"*" from the root project
+npm ERR! 
+npm ERR! Conflicting peer dependency: @babel/core@7.23.7
+npm ERR! node_modules/@babel/core
+npm ERR!   peerOptional @babel/core@"^7.22.0" from @storybook/react-webpack5@7.6.9
+npm ERR!   node_modules/@storybook/react-webpack5
+npm ERR!     dev @storybook/react-webpack5@"*" from the root project
+npm ERR! 
+npm ERR! Fix the upstream dependency conflict, or retry
+npm ERR! this command with --force or --legacy-peer-deps
+npm ERR! to accept an incorrect (and potentially broken) dependency resolution.
+npm ERR! 
+npm ERR! 
+npm ERR! For a full report see:
+npm ERR! C:\Users\olana\AppData\Local\npm-cache\_logs\2024-01-18T09_24_58_991Z-eresolve-report.txt
+
+npm ERR! A complete log of this run can be found in: C:\Users\olana\AppData\Local\npm-cache\_logs\2024-01-18T09_24_58_991Z-debug-0.log

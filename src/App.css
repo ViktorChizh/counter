@@ -1,0 +1,69 @@
+.wrapper {
+    width: 75%;
+    margin: 100px auto 0;
+    display: flex;
+    gap: 50px;
+    justify-content: space-evenly;
+}
+
+.singlePaper {
+    width: 340px;
+    height: 340px;
+    margin: 50px auto 0;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.doublePaper {
+    width: 660px;
+    height: 340px;
+    margin: 50px auto 0;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+.box {
+    width: 300px;
+    height: 300px;
+    background-color: #c8e6f1;
+    border: 3px solid blue;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.counter {
+    font-size: 150px;
+    font-weight: bold;
+    margin: -30px 0 -10px 0;
+}
+
+.buttonBox {
+    width: 80%;
+    height: 20%;
+    margin: 0 auto;
+    background-color: aqua;
+    border: 3px solid darkblue;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.errorText {
+    color: red;
+    font-size: 34px;
+    font-weight: bolder;
+    text-align: center;
+}
+.setText {
+    color: darkblue;
+    font-size: 34px;
+    font-weight: bolder;
+    text-align: center;
+}
