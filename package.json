@@ -1,5 +1,6 @@
 {
   "name": "portfolio-start",
+  "homepage": "https://ViktorChizh.github.io/5-Counter",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
