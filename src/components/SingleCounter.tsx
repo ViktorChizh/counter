@@ -8,7 +8,10 @@ import {
     maxCounterAC,
     minCounterAC,
     setCounterAC,
-    setErrorMaxCounterAC, setErrorMinCounterAC, setErrorStepAC, setSettingAC,
+    setErrorMaxCounterAC,
+    setErrorMinCounterAC,
+    setErrorStepAC,
+    setSettingAC,
     StateType,
     stepAC
 } from '../reducer/counterReducer';

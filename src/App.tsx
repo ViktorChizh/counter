@@ -13,7 +13,6 @@ function App() {
                 <CounterWithSettings/>
             </div>
         </Provider>
-
     )
 }
 
