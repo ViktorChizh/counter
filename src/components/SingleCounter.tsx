@@ -1,66 +1,71 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import {ButtonMUI} from './ButtonMUI';
 import {InputMUI} from './InputMUI';
 import {Paper} from '@mui/material';
+import {useDispatch, useSelector} from 'react-redux';
+import {
+    incCounterAC,
+    maxCounterAC,
+    minCounterAC,
+    setCounterAC,
+    setErrorMaxCounterAC, setErrorMinCounterAC, setErrorStepAC, setSettingAC,
+    StateType,
+    stepAC
+} from '../reducer/counterReducer';
+import {StoreType} from '../reducer/Store';
 
 export const SingleCounter = () => {
-    // Либо получаем сохраненные значения, либо присваиваем дефолтные (если впервые загрузили)
-    const [maxCounter, setMaxCounter] = useState<number>(Number(localStorage.getItem('maxCounter')) || 5)
-    const [minCounter, setMinCounter] = useState<number>(Number(localStorage.getItem('minCounter')) || 0)
-    const [step, setStep] = useState<number>(Number(localStorage.getItem('step')) || 1)
+    const state = useSelector<StoreType, StateType>(state => state.counter)
+    const {maxCounter, minCounter, step, counter, errorMaxCounter, errorMinCounter, errorStep, setting} = state
 
-    const [errorMaxCounter, setErrorMaxCounter] = useState<boolean>(false)
-    const [errorMinCounter, setErrorMinCounter] = useState<boolean>(false)
-    const [errorStep, setErrorStep] = useState<boolean>(false)
+    const dispatch = useDispatch()
 
-    const isDisabled = errorMaxCounter || errorMinCounter || errorStep
+    let isDisabled = errorMaxCounter || errorMinCounter || errorStep
 
     const maxCounterHandler = (value: string) => {
         if (+value < minCounter + step || value === '') {
-            setErrorMaxCounter(true)
+            dispatch(setErrorMaxCounterAC(true))
         } else {
-            setErrorMaxCounter(false)
-            setMaxCounter(+value)
+            dispatch(setErrorMaxCounterAC(false))
+            dispatch(maxCounterAC(+value))
         }
     }
     const minCounterHandler = (value: string) => {
         if (+value >= maxCounter || +value < 0 || value === '') {
-            setErrorMinCounter(true)
+            dispatch(setErrorMinCounterAC(true))
         } else {
-            setErrorMinCounter(false)
-            setMinCounter(+value)
+            dispatch(setErrorMinCounterAC(false))
+            dispatch(minCounterAC(+value))
         }
     }
     const stepHandler = (value: string) => {
         if (value === '' || +value > maxCounter - minCounter || +value <= 0) {
-            setErrorStep(true)
+            dispatch(setErrorStepAC(true))
         } else {
-            setErrorStep(false)
-            setStep(+value)
+            dispatch(setErrorStepAC(false))
+            dispatch(stepAC(+value))
         }
     }
-    const [counter, setCounter] = useState(minCounter)
-    const [setting, setSetting] = useState(false)
 
     const incCounter = () => {
-        setCounter(prev => prev + 1)
+        dispatch(incCounterAC())
     }
     const resetCounterHandler = () => {
-        setCounter(minCounter)
+        dispatch(setCounterAC())
     }
     const settingHandler = () => {
-        setSetting(!setting)
+        dispatch(setSettingAC())
     }
     const saveSettingHandler = () => {
         localStorage.setItem('maxCounter', JSON.stringify(maxCounter))
         localStorage.setItem('minCounter', JSON.stringify(minCounter))
         localStorage.setItem('step', JSON.stringify(step))
-        setSetting(!setting)
+        dispatch(setSettingAC())
     }
 
     useEffect(() => {
-        setCounter(minCounter)
-    }, [minCounter, maxCounter, step])
+        dispatch(setCounterAC())
+    }, [dispatch, minCounter, maxCounter, step])
 
     return (
         <Paper elevation={5} className='singlePaper'>
