@@ -1,25 +1,21 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {ButtonMUI} from './ButtonMUI';
 import {InputMUI} from './InputMUI';
 import {Paper} from '@mui/material';
 import {useDispatch, useSelector} from 'react-redux';
 import {
-    incCounterAC,
-    maxCounterAC,
-    minCounterAC,
-    setCounterAC,
-    setErrorMaxCounterAC,
-    setErrorMinCounterAC,
-    setErrorStepAC,
-    setSettingAC,
-    StateType,
-    stepAC
+    CounterReducerStateType, incCounterAC, maxCounterAC, minCounterAC, setCounterAC, setSettingAC, stepAC
 } from '../reducer/counterReducer';
-import {StoreType} from '../reducer/Store';
+import {StateType} from '../reducer/Store';
+import {
+    ErrorReducerStateType, setErrorMaxCounterAC, setErrorMinCounterAC, setErrorStepAC
+} from '../reducer/errorReducer';
 
 export const SingleCounter = () => {
-    const state = useSelector<StoreType, StateType>(state => state.counter)
-    const {maxCounter, minCounter, step, counter, errorMaxCounter, errorMinCounter, errorStep, setting} = state
+    const counterState = useSelector<StateType, CounterReducerStateType>(state => state.counter)
+    const errorState = useSelector<StateType, ErrorReducerStateType>(state => state.error)
+    const {maxCounter, minCounter, step, currentCounter, settingCounter} = counterState
+    const {errorMaxCounter, errorMinCounter, errorStep} = errorState
 
     const dispatch = useDispatch()
 
@@ -31,6 +27,7 @@ export const SingleCounter = () => {
         } else {
             dispatch(setErrorMaxCounterAC(false))
             dispatch(maxCounterAC(+value))
+            if(+value<currentCounter){dispatch(setCounterAC(+value))}
         }
     }
     const minCounterHandler = (value: string) => {
@@ -39,6 +36,7 @@ export const SingleCounter = () => {
         } else {
             dispatch(setErrorMinCounterAC(false))
             dispatch(minCounterAC(+value))
+            if (+value>currentCounter){dispatch(setCounterAC(+value))}
         }
     }
     const stepHandler = (value: string) => {
@@ -54,35 +52,29 @@ export const SingleCounter = () => {
         dispatch(incCounterAC())
     }
     const resetCounterHandler = () => {
-        dispatch(setCounterAC())
+        dispatch(setCounterAC(minCounter))
     }
     const settingHandler = () => {
         dispatch(setSettingAC())
     }
     const saveSettingHandler = () => {
-        localStorage.setItem('maxCounter', JSON.stringify(maxCounter))
-        localStorage.setItem('minCounter', JSON.stringify(minCounter))
-        localStorage.setItem('step', JSON.stringify(step))
         dispatch(setSettingAC())
     }
 
-    useEffect(() => {
-        dispatch(setCounterAC())
-    }, [dispatch, minCounter, maxCounter, step])
-
     return (
-        <Paper elevation={5} className='singlePaper'>
-            {!setting
+        <Paper elevation={5} className="singlePaper">
+            {!settingCounter
                 ? <div className="box">
-                    <p style={{color: counter < maxCounter ? 'darkblue' : 'red'}} className="counter">{counter}</p>
+                    <p style={{color: currentCounter < maxCounter ? 'darkblue' : 'red'}}
+                       className="counter">{currentCounter}</p>
                     <div className="buttonBox">
                         <ButtonMUI name={`inc +${step}`}
                                    color={'success'}
                                    onClick={incCounter}
-                                   isDisabled={counter >= maxCounter}/>
+                                   isDisabled={currentCounter >= maxCounter}/>
                         <ButtonMUI name={'reset'} color={'error'}
                                    onClick={resetCounterHandler}
-                                   isDisabled={counter === minCounter}/>
+                                   isDisabled={currentCounter === minCounter}/>
                         <ButtonMUI name={'set'}
                                    onClick={settingHandler}
                                    isDisabled={false}/>

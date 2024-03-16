@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import {ButtonMUI} from './ButtonMUI';
 import {InputMUI} from './InputMUI';
 import {Paper} from '@mui/material';
@@ -8,6 +8,7 @@ export const CounterWithSettings = () => {
     const [maxCounter, setMaxCounter] = useState<number>(Number(localStorage.getItem('maxCounter')) || 5)
     const [minCounter, setMinCounter] = useState<number>(Number(localStorage.getItem('minCounter')) || 0)
     const [step, setStep] = useState<number>(Number(localStorage.getItem('step')) || 1)
+    const [counter, setCounter] = useState<number>(Number(localStorage.getItem('counter')) || minCounter)
 
     const [errorMaxCounter, setErrorMaxCounter] = useState<boolean>(false)
     const [errorMinCounter, setErrorMinCounter] = useState<boolean>(false)
@@ -21,6 +22,10 @@ export const CounterWithSettings = () => {
         } else {
             setErrorMaxCounter(false)
             setMaxCounter(+value)
+            if (+value<counter){
+                setCounter(+value)
+                localStorage.setItem('counter', JSON.stringify(+value))
+            }
         }
     }
     const minCounterHandler = (value: string) => {
@@ -29,6 +34,10 @@ export const CounterWithSettings = () => {
         } else {
             setErrorMinCounter(false)
             setMinCounter(+value)
+            if (+value>counter){
+                setCounter(+value)
+                localStorage.setItem('counter', JSON.stringify(+value))
+            }
         }
     }
     const stepHandler = (value: string) => {
@@ -39,14 +48,15 @@ export const CounterWithSettings = () => {
             setStep(+value)
         }
     }
-    const [counter, setCounter] = useState(minCounter)
     const [focus, setFocus] = useState(false)
 
     const incCounter = () => {
         setCounter(prev => prev + 1)
+        localStorage.setItem('counter', JSON.stringify(counter+1))
     }
     const resetCounterHandler = () => {
         setCounter(minCounter)
+        localStorage.setItem('counter', JSON.stringify(minCounter))
     }
 
     const saveSettingHandler = () => {
@@ -55,10 +65,6 @@ export const CounterWithSettings = () => {
         localStorage.setItem('step', JSON.stringify(step))
         setFocus(false)
     }
-
-    useEffect(() => {
-        setCounter(minCounter)
-    }, [minCounter, maxCounter, step])
 
     return (
         <Paper elevation={5} className="doublePaper">
