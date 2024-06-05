@@ -1,1 +1,2 @@
-# 5-Counter - test project
+# counter - test project
+## https://viktorchizh.github.io/counter/
